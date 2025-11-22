@@ -1,0 +1,7 @@
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Confirm</button>
+        <a href="{% url 'delete-post' del.pk %}">Cancel</a>
+    </form>
+</body>

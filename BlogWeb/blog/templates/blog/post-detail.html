@@ -1,0 +1,8 @@
+<body>
+    <h5> {{pt.title}} </h5>
+    <hr>
+    <p> {{pt.content}}</p>
+    <a href="{% url 'list-post' %}">Back</a>|
+    <a href="{% url 'update-post' pt.pk %}">Edit</a>
+    <a href="{% url 'delete-post' pt.pk %}">Delete</a>
+</body>

@@ -1,0 +1,9 @@
+<body>
+    {% for post in posts %}
+    <h4> Title: <a href="{% url 'post-detail' post.pk %}"> {{post.title}} </h4></a>
+    <hr>
+    <p> {{post.content}}</p>
+    {% empty %}
+    <h5> No blogs to Display</h5>
+    {% endfor %}
+</body>

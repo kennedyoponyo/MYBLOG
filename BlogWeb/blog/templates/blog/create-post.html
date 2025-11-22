@@ -1,0 +1,9 @@
+<body>
+    <p>Are you sure you want to delete{{del.title}}</p>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Submit</button>
+       
+    </form>
+</body>
