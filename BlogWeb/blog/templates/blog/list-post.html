@@ -1,6 +1,6 @@
 <body>
     {% for post in posts %}
-    <h4> Title: <a href="{% url 'post-detail' post.pk %}"> {{post.title}} </h4></a>
+    <h4> Title: <a href="{% url 'post-detail' post.pk %}"> {{post.title}} </a></h4>
     <hr>
     <p> {{post.content}}</p>
     {% empty %}
